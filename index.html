@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1><img src="icon.png" alt="Icon">To-Do List App</h1>
+    </header>
+    <main>
+        <!-- Calendar Section -->
+        <section id="calendar-section">
+            <div id="calendar-container">
+                <div id="calendar-header">
+                    <button id="prev-month">Previous</button>
+                    <h3 id="month-year"></h3>
+                    <button id="next-month">Next</button>
+                </div>
+                <div id="calendar-grid"></div>
+            </div>
+        </section>
+        
+        <!-- Task List Section -->
+        <section id="task-list-section">
+            <ul id="todo-items">
+                <!-- Task list items will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer-options">
+            <form id="add-todo">
+                <input type="text" id="todo-input" placeholder="Add new task">
+                <button id="add-btn">Add Task</button>
+            </form>   
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

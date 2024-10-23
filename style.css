@@ -1,0 +1,130 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background: rgba(141, 101, 175, 0.87);
+    color: #0e0113;
+    padding: 1em;
+    text-align: center;
+    font-size: 20px;   
+    font-weight: 5px;
+    font-family: cursive;
+}
+header img {
+    width: 70px; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    padding-bottom: 6em; 
+}
+#calendar-container {
+    width: 90%;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.done-checkbox {
+    margin-right: 10px;
+    color: green;
+}
+.today {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+}
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#calendar-grid div {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#calendar-grid div:hover {
+    background-color: #f0f0f0;
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgb(82, 172, 34);
+
+}
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+#add-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #fafafa3c;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 0.5em;
+    margin-right: 10px;
+    border: 1px solid #0c0505;
+    border-radius: 5px;
+}
+footer {
+    background-color: rgba(255, 248, 220, 0.774);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    margin-top: auto; 
+}
+
+#footer-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(69, 157, 216, 0.792);
+}
+
+#todo-items li button {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+todo-items{
+    font-size: larger;
+}
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
